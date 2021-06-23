@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "LexendDeca";
+    src: url("fonts/LexendDeca-Regular.ttf");
+}
+@font-face {
+    font-family: "BigShouldersDisplay";
+    src: url("fonts/BigShouldersDisplay-Bold.ttf");
+    font-weight: bold;
+}
+
+p{
+	color: hsla(0, 0%, 100%, 0.75);
+	font-family: "LexendDeca";
+}
+h1{
+	color:hsl(0, 0%, 95%);
+	font-family: "BigShouldersDisplay";
+}
+button{
+	background-color: hsl(0, 0%, 95%);
+	color: black;
+	mix-blend-mode: screen;
+	border-radius: 21px;
+	border: 1px solid hsl(0, 0%, 95%);
+	padding: 15px;
+	font-family: "LexendDeca";
+	margin-top:15%;
+}
+button:active{
+	background-color: black;
+	color: hsl(0, 0%, 95%);
+	border: 1px solid hsl(0, 0%, 95%);
+}
+body{
+	background-color: hsl(0, 0%, 95%);
+}
+
+.columns{
+	font-size: 15px;
+	display: flex;
+    flex-direction: row;     /* make main axis horizontal (default setting) */
+    justify-content: center; /* center items horizontally, in this case */
+    align-items: center;
+	width: 90%;
+	height: 90%;
+	padding:5%;
+}
+.sedans{
+	background-color: hsl(31, 77%, 52%);
+	width: 25%;
+	height: 70%;
+	position: relative;
+}
+.suvs{
+	background-color: hsl(184, 100%, 22%);
+	width: 25%;
+	height: 70%;
+	position: relative;
+}
+.luxury{
+	background-color: hsl(179, 100%, 13%);
+	width: 25%;
+	height: 70%;
+	position: relative;
+}
+.content{
+    position:absolute;
+	left:30%;
+	top:50%;
+	transform: translate(-20%,-50%);
+}
+@media screen and (max-width: 700px) {
+	.columns{
+		display: inline;
+		width: 80%;
+		height: 80%;
+		padding: 10%;
+	}
+	.sedans{
+		width: 90%;
+		height: max-content;
+		padding: 5%;
+	}
+	.suvs{
+		width: 90%;
+		height: max-content;
+		padding: 5%;
+	}
+	.luxury{
+		width: 90%;
+		height: max-content;
+		padding: 5%;
+	}
+	.content{
+		position:static;
+		left:0;
+		top:0;
+		transform: none;
+	}
+	button{
+		margin-top:5%;
+	}
+}
