@@ -1,2 +1,2 @@
 # FrontendCode
-this is my solution from this coding challenge: https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-
+posting my own solution from these challenges: https://www.frontendmentor.io/challenges
